@@ -22,6 +22,6 @@ if (dayNumber < 1 || dayNumber >= 32) {
   alert(`Число ${dayNumber} попадает в 1 декаду месяца.`);
 } else if (dayNumber >= 11 && dayNumber < 21) {
   alert(`Число ${dayNumber} попадает в 2 декаду месяца.`);
-} else if (dayNumber >= 21 && dayNumber < 32) {
+} else if (dayNumber >= 21) {
   alert(`Число ${dayNumber} попадает в 3 декаду месяца.`);
 }
