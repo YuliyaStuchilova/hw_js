@@ -11,7 +11,7 @@
 */
 
 
-function salary() {
+function max() {
   const number1 = +prompt("Введите первое число");
   const number2 = +prompt("Введите второе число");
   const number3 = +prompt("Введите третье число");
@@ -21,4 +21,4 @@ function salary() {
   );
 }
 
-salary();
+max();
