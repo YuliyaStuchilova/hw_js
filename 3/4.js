@@ -18,7 +18,6 @@ console.log(sum(2, 6)); должно вывести число 8 в консол
 Демонстрировать работы функций не обязательно.
 */
 
-
 function sum(number1, number2) {
   return number1 + number2;
 }
@@ -26,9 +25,8 @@ function sum(number1, number2) {
 function subtraction(number1, number2) {
   if (number1 >= number2) {
     return number1 - number2;
-  } else {
-    return number2 - number1;
   }
+  return number2 - number1;
 }
 
 function mult(number1, number2) {

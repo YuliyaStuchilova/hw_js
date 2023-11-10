@@ -6,11 +6,10 @@
 Необходимо продемонстрировать вызов данной функции, с выводом результата, 
 который получаем от функции, в консоль.
 */
+const userNumber = Number(prompt("Введите число, которое надо возвести в куб"));
 
-
-function cubeNumber() {
-  const userNumber = Number(prompt("Введите число, которое надо возвести в куб"));
-  return Math.pow(userNumber, 3);
+function cubeNumber(userNumber) {
+  return userNumber ** 3;
 }
 
-console.log(cubeNumber());
+console.log(cubeNumber(userNumber));

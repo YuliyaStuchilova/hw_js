@@ -9,16 +9,16 @@
 сообщение "Размер заработной платы за вычетом налогов равен N."
 */
 
-
-function salary() {
-  const userNumber = prompt("Введите размер вашей заработной платы");
-  if (isNaN(userNumber)) {
-    alert("Значение задано неверно");
-  } else {
-    console.log(
-      `Размер заработной платы за вычетом налогов равен ${userNumber * 0.87}.`
-    );
-  }
+function salary(userNumber) {
+  const userSalary = Math.round(userNumber * 0.87 * 100) / 100;
+  console.log(
+    `Размер заработной платы за вычетом налогов равен ${userSalary}.`
+  );
 }
 
-salary();
+const userNum = +prompt("Введите размер вашей заработной платы");
+if (Number.isNaN(userNum)) {
+  alert("Значение задано неверно");
+} else {
+  salary(userNum);
+}

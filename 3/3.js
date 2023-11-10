@@ -9,16 +9,15 @@
 Примечание: Условимся, что пользователь всегда вводит корректные значения, 
 три числа. Проверять их не нужно.
 */
+const number1 = +prompt("Введите первое число");
+const number2 = +prompt("Введите второе число");
+const number3 = +prompt("Введите третье число");
 
-
-function max() {
-  const number1 = +prompt("Введите первое число");
-  const number2 = +prompt("Введите второе число");
-  const number3 = +prompt("Введите третье число");
-  const maxNumber = Math.max(number1, number2, number3);
+function max(num1, num2, num3) {
+  const maxNumber = Math.max(num1, num2, num3);
   alert(
-    `Максимальное значение среди чисел ${number1}, ${number2}, ${number3} равно ${maxNumber}.`
+    `Максимальное значение среди чисел ${num1}, ${num2}, ${num3} равно ${maxNumber}.`
   );
 }
 
-max();
+max(number1, number2, number3);
